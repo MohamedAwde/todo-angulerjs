@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "make": "Toyota",
+      "model": "Celica",
+      "price": 35000,
+      "notes": "Toyota Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Toyota City, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937. Toyota is one of the largest automobile manufacturers in the world, producing about 10 million vehicles per year.",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "make": "Porsche",
+      "model": "Boxster",
+      "price": 72000,
+      "notes": "Dr. Ing. h.c. F. Porsche AG, usually shortened to Porsche, is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, headquartered in Stuttgart, Baden-Württemberg, Germany"
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "make": "Nokia",
+      "model": "3310",
+      "price": 2500,
+      "notes": "",
+      "id": 4
+    }
+  ]
+}
