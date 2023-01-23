@@ -53,6 +53,6 @@
     {{ editMode === 0 ? "Submit" : "Update" }}
   </button>
 </form>
-<div *ngIf="error" class="alert alert-danger mt-2" role="alert">
-  {{ error }} <a href="#" (click)="retry()">try again?</a>
+<div *ngIf="error && !loading" class="alert alert-danger mt-2" role="alert">
+  {{ error }} <a href="#" (click)="retry()">try to again?</a>
 </div>

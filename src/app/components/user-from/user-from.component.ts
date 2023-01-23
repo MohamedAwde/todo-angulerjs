@@ -19,6 +19,7 @@ export class UserFromComponent implements OnInit {
 
   ngOnInit(): void {
     this.usersService.userSelectedEvent.subscribe(({ id, ...data }) => {
+      console.log('selected user id', id);
       this.userId = id;
       this.form?.setValue(data);
       this.editMode = EditMode.EDIT_PRODUCT;
@@ -40,6 +41,7 @@ export class UserFromComponent implements OnInit {
           this.error = '';
           this.form?.form.enable();
           this.form?.reset();
+          this.userId = '';
         },
         (error) => {
           this.form?.form.enable();
@@ -57,14 +59,14 @@ export class UserFromComponent implements OnInit {
             this.form?.form.enable();
             this.editMode = EditMode.NEW_PRODUCT;
             this.form?.reset();
+            this.userId = '';
           },
           (error) => {
             this.form?.form.enable();
             this.loading = false;
-            this.error = error;
+            this.error = 'Error while connecting to the server';
           }
         );
-      this.userId = '';
     }
   }
 }

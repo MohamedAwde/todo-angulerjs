@@ -27,7 +27,7 @@
       "id": 2
     },
     {
-      "firstName": "Ervin",
+      "firstName": "Ervin999",
       "lastName": "Howell",
       "id": 3
     },
@@ -35,21 +35,6 @@
       "firstName": "Clementine",
       "lastName": "Bauch",
       "id": 4
-    },
-    {
-      "firstName": "Patricia",
-      "lastName": "Lebsack",
-      "id": 5
-    },
-    {
-      "firstName": "Chelsey",
-      "lastName": "Dietrich",
-      "id": 6
-    },
-    {
-      "firstName": "Dennis",
-      "lastName": "Schulist",
-      "id": 7
     }
   ]
 }
