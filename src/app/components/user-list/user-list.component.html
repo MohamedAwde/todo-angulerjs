@@ -1,0 +1,55 @@
+<h2 class="mt-4">Users Table</h2>
+<app-spinner
+  *ngIf="loading && !error"
+  [label]="'loading user list...'"
+></app-spinner>
+<table *ngIf="users.length !== 0" class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col"></th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td colspan="2">{{ user.firstName + " " + user.lastName }}</td>
+      <td colspan="2">
+        <button
+          [disabled]="deleting && i === currDeletingUserIndex"
+          type="button"
+          class="btn btn-danger"
+          (click)="handleDelete(user, i)"
+        >
+          {{ deleting && i === currDeletingUserIndex ? "Deleting" : "Delete" }}
+        </button>
+        <button
+          (click)="handlePopulateToFrom(user)"
+          type="button"
+          class="btn btn-warning mx-2"
+        >
+          Edit
+        </button>
+        <button
+          type="button"
+          class="btn btn-info"
+          (click)="handlePopulateInfo(user)"
+        >
+          Info
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div
+  *ngIf="users.length === 0 && !loading"
+  class="alert alert-dark"
+  role="alert"
+>
+  no users found.
+</div>
+<div *ngIf="error" class="alert alert-danger" role="alert">
+  {{ error }} <a href="#" (click)="retry()">try again?</a>
+</div>

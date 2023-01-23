@@ -8,18 +8,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
+import { UserFromComponent } from './components/user-from/user-from.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-import { ProductFromComponent } from './components/product-from/product-form.component';
-import { ProductsTableComponent } from './components/products-table/products-table.component';
-import { DeleteBtnComponent } from './components/delete-btn/delete-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    UserFromComponent,
+    UserDetailsComponent,
+    UserListComponent,
     SpinnerComponent,
-    ProductFromComponent,
-    ProductsTableComponent,
-    DeleteBtnComponent,
   ],
   imports: [
     BrowserModule,

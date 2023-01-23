@@ -13,62 +13,43 @@
       "model": "Boxster",
       "price": 72000,
       "notes": "Dr. Ing. h.c. F. Porsche AG, usually shortened to Porsche, is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, headquartered in Stuttgart, Baden-Württemberg, Germany"
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Mohamed",
+      "lastName": "Ahmed",
+      "id": 1
     },
     {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
+      "firstName": "Leanne",
+      "lastName": "Graham",
+      "id": 2
+    },
+    {
+      "firstName": "Ervin",
+      "lastName": "Howell",
+      "id": 3
+    },
+    {
+      "firstName": "Clementine",
+      "lastName": "Bauch",
       "id": 4
     },
     {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
+      "firstName": "Patricia",
+      "lastName": "Lebsack",
+      "id": 5
     },
     {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
+      "firstName": "Chelsey",
+      "lastName": "Dietrich",
+      "id": 6
     },
     {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
-    },
-    {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
-    },
-    {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
-    },
-    {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
-    },
-    {
-      "make": "Nokia",
-      "model": "3310",
-      "price": 2500,
-      "notes": "",
-      "id": 4
+      "firstName": "Dennis",
+      "lastName": "Schulist",
+      "id": 7
     }
   ]
 }

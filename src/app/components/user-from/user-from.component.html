@@ -1,0 +1,58 @@
+<h2 class="mt-4">Add User</h2>
+<form #userNameForm="ngForm" (ngSubmit)="handleSubmit()">
+  <div class="mb-3">
+    <label for="first-name" class="form-label">First Name</label>
+    <input
+      #userFirstNameInput="ngModel"
+      type="text"
+      required
+      class="form-control"
+      id="first-name"
+      ngModel
+      name="firstName"
+    />
+  </div>
+
+  <p
+    *ngIf="userFirstNameInput.touched && userFirstNameInput.invalid"
+    class="text-danger"
+    role="alert"
+  >
+    First name is required
+  </p>
+
+  <div class="mb-3">
+    <label for="last-name" class="form-label">Last Name</label>
+    <input
+      #userLastNameInput="ngModel"
+      type="text"
+      required
+      class="form-control"
+      id="last-name"
+      ngModel
+      name="lastName"
+    />
+  </div>
+
+  <p
+    *ngIf="userLastNameInput.touched && userLastNameInput.invalid"
+    class="text-danger"
+  >
+    Last name is required
+  </p>
+
+  <div *ngIf="loading" class="spinner-border text-primary" role="status"></div>
+
+  <button
+    *ngIf="!loading"
+    [disabled]="userLastNameInput.invalid || userLastNameInput.invalid"
+    type="submit"
+    class="btn"
+    [ngClass]="{ 'btn-primary': editMode === 0, 'btn-warning': editMode === 1 }"
+  >
+    {{ editMode === 0 ? "Submit" : "Update" }}
+  </button>
+</form>
+<div *ngIf="error" class="alert alert-danger mt-2" role="alert">
+  {{ error }} <a href="#" (click)="retry()">try again?</a>
+</div>
